@@ -1,0 +1,35 @@
+<div class="container" style="margin-top:30px">
+  <div class="row">
+
+      <!-- Header -->
+	  <div class="col-sm-12">
+        <div class="header">
+            <h1>Flight Search Engine</h1>
+        </div>
+	  </div>
+
+      <!-- Sidebar -->
+     
+      
+      <div class="col-sm-4 sidebar">
+
+        
+        <form [formGroup] = "searchForm"  (ngSubmit) = "onSubmit(form.value)">
+         <app-tab></app-tab>
+        </form>
+         <hr class="d-sm-none">
+      </div>
+
+      <!-- Content Area -->
+      <div class="col-sm-8">
+          <app-content></app-content>
+      </div>
+    
+
+      
+</div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div>

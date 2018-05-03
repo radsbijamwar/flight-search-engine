@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "indigo",
+    "arriveDate": "2018-04-14",
+    "deptDate": "2018-04-16",
+    "arrvLocation": "pune",
+    "deptLocation": "mumbai"
+  },
+  {
+    "id": 2,
+    "title": "air india",
+    "arriveDate": "2018-04-20",
+    "deptDate": "2018-04-22",
+    "arrvLocation": "mumbai",
+    "deptLocation": "pune"
+  },
+  {
+   "id": 3,
+    "title": "xyz",
+    "arriveDate": "2018-04-23",
+    "deptDate": "2018-04-25",
+    "arrvLocation": "pune",
+    "deptLocation": "delhi"
+  },
+  {
+    "id": 4,
+    "title": "pqr",
+    "arriveDate": "2018-04-26",
+    "deptDate": "2018-04-28",
+    "arrvLocation": "delhi",
+    "deptLocation": "pune"
+  }
+]

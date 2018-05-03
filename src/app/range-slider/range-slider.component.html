@@ -1,0 +1,9 @@
+
+<div class="form-group">
+    
+        <input id="slider" type="range" min="10000" max="30000" step="10" 
+        [(ngModel)]="priceRange" class="form-control"  name="priceRange"  
+        (ngModelChange)="onChange(priceRange)"/>
+    
+    <pre>{{priceRange}}</pre>
+</div>

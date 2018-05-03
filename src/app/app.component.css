@@ -1,0 +1,86 @@
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+}
+
+.container {
+  border: 2px solid gray;
+}
+/* Bread Crumb */
+.breadcrumb{
+  background-color: unset;
+}
+.col-sm-8.breadcrumb {
+  border-bottom: 2px solid gray;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  border: 2px solid gray;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: ">\00a0";
+}
+ul.breadcrumb li a {
+  color: #000000;
+  text-decoration: none;
+}
+ul.breadcrumb {
+  background-color: unset;
+  border: 2px solid gray;
+}
+
+/*side bar*/
+.col-sm-4.sidebar {
+  border: 2px solid gray;
+}
+
+/* Content Area */
+span.date li {
+  font-size: 15px;
+}
+
+span.date {
+  float: right;
+}
+
+.col-sm-4.arrive {
+  margin-top: 2em;
+}
+.arrive button.btn.btn-default {
+  margin-top: 10px;
+  padding-left: 23px;
+  padding-right: 25px;
+}
+.row.listing {
+  border: 2px solid gray;
+  margin: 5px;
+  padding: 10px;
+}
+a#tab-selectbyid1 {
+  border: 0;
+}
+a#tab-selectbyid2, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+.nav-tabs .nav-link, a#tab-selectbyid1, a#tab-selectbyid2{
+
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+
+@media (min-width: 576px){
+
+  .col-sm-4.arrive {
+    flex: 0 0 33.333333%;
+    max-width: 26.333333%;
+  }
+}

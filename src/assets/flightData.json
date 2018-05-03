@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "indigo",
+    "arriveDate": "2018-04-14",
+    "deptDate": "2018-04-16",
+    "arrvLocation": "pune",
+    "deptLocation": "mumbai",
+    "departTime": "10 AM",
+    "arriveTime": "12 PM",
+    "fare": "10.000.00",
+    "fno": "Al-101"
+  },
+  {
+    "id": 2,
+    "title": "air india",
+    "arriveDate": "2018-04-20",
+    "deptDate": "2018-04-22",
+    "arrvLocation": "mumbai",
+    "deptLocation": "pune",
+    "departTime": "8 AM",
+    "arriveTime": "10 PM",
+    "fare": "8.000.00",
+    "fno": "Al-301"
+  },
+  {
+   "id": 3,
+    "title": "jet airways",
+    "arriveDate": "2018-04-20",
+    "deptDate": "2018-04-25",
+    "arrvLocation": "pune",
+    "deptLocation": "delhi",
+    "departTime": "2 PM",
+    "arriveTime": "4 PM",
+    "fare": "15.000.00",
+    "fno": "Al-202"
+  },
+  {
+    "id": 4,
+    "title": "spice jet",
+    "arriveDate": "2018-04-26",
+    "deptDate": "2018-04-28",
+    "arrvLocation": "delhi",
+    "deptLocation": "pune",
+    "departTime": "8 PM",
+    "arriveTime": "12 AM",
+    "fare": "12.000.00",
+    "fno": "Al-305"
+  },
+  {
+    "id": 4,
+    "title": "go air",
+    "arriveDate": "2018-04-28",
+    "deptDate": "2018-04-30",
+    "arrvLocation": "nagpur",
+    "deptLocation": "pune",
+    "departTime": "8 PM",
+    "arriveTime": "12 AM",
+    "fare": "10.000.00",
+    "fno": "Al-505"
+  }
+]

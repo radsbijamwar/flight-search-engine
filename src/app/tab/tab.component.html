@@ -1,0 +1,42 @@
+<ngb-tabset #t="ngbTabset">
+  <ngb-tab id="tab-selectbyid1" title="One Way">
+    <ng-template ngbTabContent>
+   
+        <app-city-search></app-city-search>
+        <app-date-picker></app-date-picker>
+        <app-passanger-dropdown></app-passanger-dropdown>
+        <div class="form-group"><button type="submit" class="btn btn-default">Search</button></div>
+   
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab id="tab-selectbyid2" title="Two Way">
+    <ng-template ngbTabContent>
+   
+     
+        <app-city-search></app-city-search>
+        <app-date-picker></app-date-picker>
+
+        <div class="form-group">
+        <div class="input-group">
+            <input class="form-control" 
+            placeholder="yyyy-mm-dd"
+            name="dp" [(ngModel)]="departureDate" 
+            ngbDatepicker #dd="ngbDatepicker">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" (click)="dd.toggle()" type="button">
+              <img src="../../assets/img/calender-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+              </button>
+            </div>
+        </div>
+        </div>
+        <pre>Model: {{ departureDate | json }}</pre>
+
+
+        <app-passanger-dropdown></app-passanger-dropdown>
+        <div class="form-group"> <button  type="submit" class="btn btn-default">Search</button></div>
+   
+
+ 
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>

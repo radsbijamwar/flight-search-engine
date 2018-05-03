@@ -1,0 +1,8 @@
+<div class="form-group">
+    <select class="form-control"  name="passanger_num" >
+        <option value="">Select Passanger</option>
+        <option *ngFor="let passanger of passangers" [value]="passanger.value">  
+        {{ passanger.display}}
+        </option>
+    </select>
+</div>

@@ -1,0 +1,31 @@
+<div class="form-group">
+     <input  id="origin-city"  
+    class="form-control" type="text" 
+    [(ngModel)]="originCity" name="originCity" 
+    placeholder="Enter Origin City"
+    (keyup)="onChange(originCity) "/>      
+                             
+    <!-- <pre>Model: {{ originCity | json }}</pre> -->
+    </div>
+<div class="form-group">
+        <input  id="destination-city"  
+        class="form-control" type="text" 
+        [(ngModel)]="destinationCity" name="destinationCity" 
+        placeholder="Enter Destination City"
+        (keyup)="onChange1(destinationCity)" />    
+
+    <!-- <pre>Model: {{ destinationCity | json }}</pre> -->
+</div>
+
+<div class="form-group">
+        <input  id="date"  
+        class="form-control" type="date" 
+        [(ngModel)]="arrvDate" 
+        name="arrvDate" placeholder="Enter Date"
+        (ngModelChange)="onDatechange(arrvDate)" />      
+       
+        <pre>Model: {{ arrvDate | json }}</pre>
+</div>
+
+
+

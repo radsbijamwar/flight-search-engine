@@ -1,0 +1,119 @@
+<!-- Sidebar -->
+<div class="col-sm-3 sidenav">
+  <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#one-way">One Way</a></li>
+      <li><a data-toggle="tab" href="#two-way">Two Way</a></li>
+  </ul>
+
+  <div class="tab-content">
+      <div id="one-way" class="tab-pane fade in active">
+          <h3>One Way</h3>
+          
+            <div class="form-group">
+            <input
+                id="origin-city"
+                type="text"
+                class="form-control"
+                placeholder="Enter Origin City"
+                [(ngModel)]="originCity"
+                [ngbTypeahead]="search"
+                (focus)="focus$.next($event.target.value)"
+                (click)="click$.next($event.target.value)"
+                #instance="ngbTypeahead"
+                />
+                <!-- <pre>Model: {{ originCity | json }}</pre> -->
+            </div>
+            <div class="form-group">
+                <input
+                id="destination-city"
+                type="text"
+                class="form-control"
+                placeholder="Enter Destination City"
+                [(ngModel)]="destinationCity"
+                [ngbTypeahead]="searchDestination"
+                (focus)="focus1$.next($event.target.value)"
+                (click)="click1$.next($event.target.value)"
+                #instance1="ngbTypeahead"
+                />
+                <!-- <pre>Model: {{ destinationCity | json }}</pre> -->
+            </div>
+
+            <app-date-picker></app-date-picker>
+            
+            <app-passanger-dropdown></app-passanger-dropdown>
+            
+              <button type="Search" class="btn btn-default">Search</button>
+              
+          
+      </div>
+      <div id="two-way" class="tab-pane fade">
+          <h3>Two Way</h3>
+                <div class="form-group">
+                    <input
+                        id="origin-city"
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Origin City"
+                        [(ngModel)]="originCity"
+                        [ngbTypeahead]="search"
+                        (focus)="focus$.next($event.target.value)"
+                        (click)="click$.next($event.target.value)"
+                        #instance="ngbTypeahead"
+                        />
+                        <!-- <pre>Model: {{ originCity | json }}</pre> -->
+                    </div>
+                    <div class="form-group">
+                        <input
+                        id="destination-city"
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Destination City"
+                        [(ngModel)]="destinationCity"
+                        [ngbTypeahead]="searchDestination"
+                        (focus)="focus1$.next($event.target.value)"
+                        (click)="click1$.next($event.target.value)"
+                        #instance1="ngbTypeahead"
+                        />
+                        <!-- <pre>Model: {{ destinationCity | json }}</pre> -->
+                    </div>
+
+                  <div class="form-group">
+                      <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Departure Date
+                              <span class="caret"></span></button>
+                              <ul class="dropdown-menu">
+                              <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              </ul>
+                          </div>
+                  </div>
+                  <div class="form-group">
+                          <div class="dropdown">
+                                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Return Date
+                                  <span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                  <li><a href="#">1</a></li>
+                                  <li><a href="#">2</a></li>
+                                  <li><a href="#">3</a></li>
+                                  </ul>
+                              </div>
+                      </div>
+                      <div class="form-group">
+                              <div class="dropdown">
+                                      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Passanger
+                                      <span class="caret"></span></button>
+                                      <ul class="dropdown-menu">
+                                      <li><a href="#">1</a></li>
+                                      <li><a href="#">2</a></li>
+                                      <li><a href="#">3</a></li>
+                                      </ul>
+                                  </div>
+                          </div>
+                  <button type="Search" class="btn btn-default">Search</button>
+                  
+      </div>
+      
+  </div>
+</div>
+<!-- End Sidebar -->

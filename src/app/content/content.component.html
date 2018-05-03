@@ -1,0 +1,61 @@
+ <!-- Content Area -->
+ 
+      <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pictures</a></li>
+          <li><a href="#">Summer 15</a></li>
+          <li>Italy</li>
+
+          <span class="date">
+          <li>Depart 1st Jan 2012 </li><br/>
+          <li>Return 10 Jan 2012 </li>
+          </span>
+      </ul>    
+ 
+  
+  <!-- <div class="row listing" *ngFor="let data of (myData ? myData.slice(0,10): []); let i = index">
+      <div class="col-sm-4">
+          <h3>{{data.title}}</h3>
+          <h5>Al-202</h5>
+          <h4>PNQ > DEL</h4>
+          <h4>Depart: 10 AM</h4>
+          <h4>Arrive: 12 PM</h4>
+      </div>
+      <div class="col-sm-4 arrive">
+          
+          <h5>Al-202</h5>
+          <h4>DEL > PNQ</h4>
+          <h4>Depart: 10 AM</h4>
+          <h4>Arrive: 12 PM</h4>
+      </div>
+      <div class="col-sm-4 arrive">
+          <img src="http://via.placeholder.com/140x100">
+          <button type="Search" class="btn btn-default">Book this flight</button>
+      </div>
+  </div> -->
+
+
+  <div class="row listing" *ngFor="let data of myData ; let i = index">
+    <div class="col-sm-4">
+        <h3>{{data.id}}</h3>
+        <h5>{{data.title}}</h5>
+        <h4>{{data.arriveDate}}</h4>
+        <h4>Depart: {{data.departTime}}</h4>
+        <h4>Arrive: {{data.arriveTime}}</h4>
+    </div>
+    <div class="col-sm-4 arrive">
+        
+        <!-- <h5>Al-202</h5>
+        <h4>DEL > PNQ</h4>
+        <h4>Depart: 10 AM</h4>
+        <h4>Arrive: 12 PM</h4> -->
+    </div>
+    <div class="col-sm-4 arrive">
+        <img src="http://via.placeholder.com/140x100">
+        <button type="Search" class="btn btn-default">Book this flight</button>
+    </div>
+</div>
+
+ 
+ 
+  <!-- End Content Area -->
